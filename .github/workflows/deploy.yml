@@ -18,22 +18,22 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: michaeldlt1
+          password: ${{ secrets.TOKEN_WS }}
 
       - name: Build and push backend image
         uses: docker/build-push-action@v6
         with:
           context: ./backend
           push: true
-          tags: ghcr.io/isfran2305/booktrack-api:latest
+          tags: ghcr.io/michaeldl1/booktrack-api:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v6
         with:
           context: ./frontend
           push: true
-          tags: ghcr.io/isfran2305/booktrack-web:latest
+          tags: ghcr.io/michaeldlt1/booktrack-web:latest
 
   deploy:
     needs: build-and-push
