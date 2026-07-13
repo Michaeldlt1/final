@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f1e8;
+  color: #2b2118;
+}
+.app {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.card.wide { max-width: 520px; }
+.card h2 { margin-top: 0; }
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #d1c7b8;
+  border-radius: 6px;
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #7a4a2b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button.secondary { background: #6b7280; width: auto; padding: 6px 12px; }
+button.danger { background: #b91c1c; width: auto; padding: 6px 10px; margin: 0; }
+.error { color: #b91c1c; font-size: 14px; }
+.link { color: #7a4a2b; cursor: pointer; text-align: center; margin-top: 12px; }
+.header-row { display: flex; justify-content: space-between; align-items: center; }
+.inline-form { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.inline-form input { flex: 1; min-width: 100px; margin: 0; }
+.inline-form button { width: auto; margin: 0; }
+.book-list { list-style: none; padding: 0; }
+.book-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5ddd0;
+  gap: 8px;
+}
+.book-info { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.author { color: #6b5c4a; }
+.genre { color: #9a8a73; font-size: 13px; }
+.status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #e5ddd0;
+}
+.status-leyendo { background: #fde68a; }
+.status-leido { background: #bbf7d0; }
+.rating { margin-left: 6px; }
+.star { color: #d1c7b8; cursor: pointer; }
+.star.filled { color: #d97706; }
