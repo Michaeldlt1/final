@@ -1,6 +1,6 @@
 # Documentación de despliegue de BookTrack
 
-## Resumen
+## Introduccion
 BookTrack es una aplicación full-stack compuesta por un frontend desarrollado con Vite y un backend con FastAPI. El despliegue actual está preparado para ejecutarse en un VPS mediante contenedores Docker, con publicación automática desde GitHub Actions.
 
 ## Arquitectura actual
@@ -57,7 +57,7 @@ Datos configurados:
 Variable de entorno usada por la app:
 - `DATABASE_URL`
 
-Ejemplo detectado en el repositorio:
+Ejemplo  en el repositorio:
 - `postgresql://booktrack_admin:***@booktrack-postgres:5432/booktrack`
 
 > La contraseña real debe mantenerse en el entorno del servidor o en secretos y no debe exponerse en repositorios públicos.
@@ -101,7 +101,7 @@ El proyecto incluye un ejemplo de variables de entorno en `backend/.env.example`
 Este README documenta la configuración de despliegue que ya está implementada o inferida del repositorio. Si el entorno del VPS usa Portainer, Traefik o un stack Docker distinto, esos detalles pueden ajustarse en futuras versiones de esta documentación.
 
 # URLS DEL PROYECTO
-caiza.byronrm.com - front
+caiza.byronrm.com - frontend
 pqmsf.byronrm.com - db
 portainermsf.byronrm.com - portainer 
 backtorre.byronrm.com - backend
